@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snackbar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    
+    
+    <script type="module" crossorigin src="/goit-js-hw-10/assets/styles-f3635d75.js"></script>
+    <script type="module" crossorigin src="/goit-js-hw-10/assets/vendor-77e16229.js"></script>
+    <script type="module" crossorigin src="/goit-js-hw-10/assets/2-snackbar-e361454f.js"></script>
+    <link rel="stylesheet" href="/goit-js-hw-10/assets/styles-10c40100.css">
+    <link rel="stylesheet" href="/goit-js-hw-10/assets/vendor-7a007824.css">
+    <link rel="stylesheet" href="/goit-js-hw-10/assets/2-snackbar-a63c2508.css">
+  </head>
+
+  <body>
+    <a href="./index.html">Go to home</a>
+    <!-- <a href="./1-timer.html">Timer</a> -->
+    <section class="section-timer">
+      <form class="form">
+        <label class="label-delay">
+          <p class="label-text">Delay (ms)</p>
+
+          <input class="input-delay" type="number" name="delay" required />
+        </label>
+
+        <fieldset>
+          <legend>State</legend>
+          <div class="radio-box">
+            <div class="wrapper">
+              <label class="label-radio">
+                <input
+                  class="input-radio"
+                  type="radio"
+                  name="state"
+                  value="fulfilled"
+                  required
+                />
+                Fulfilled
+              </label>
+              <label class="label-radio">
+                <input
+                  class="input-radio"
+                  type="radio"
+                  name="state"
+                  value="rejected"
+                  required
+                />
+                Rejected
+              </label>
+            </div>
+          </div>
+        </fieldset>
+
+        <button class="create-btn" type="submit">Create notification</button>
+      </form>
+    </section>
+
+    
+  </body>
+</html>
