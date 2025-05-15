@@ -12,14 +12,16 @@ form.addEventListener('submit', event => {
   createPromise(delay, isActive)
     .then(delay => {
       iziToast.success({
-        message: `✅ Fulfilled promise in ${delay}ms`,
+        title: 'OK',
+        message: `Fulfilled promise in ${delay}ms`,
         position: 'topRight',
         timeout: 3000,
       });
     })
     .catch(delay => {
       iziToast.error({
-        message: `❌ Rejected promise in ${delay}ms`,
+        title: 'Error',
+        message: `Rejected promise in ${delay}ms`,
         position: 'topRight',
         timeout: 3000,
       });

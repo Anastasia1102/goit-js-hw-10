@@ -21,6 +21,21 @@ const options = {
   time_24hr: true,
   defaultDate: new Date(),
   minuteIncrement: 1,
+  locale: {
+    firstDayOfWeek: 0,
+    weekdays: {
+      shorthand: ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'],
+      longhand: [
+        'Monday',
+        'Tuesday',
+        'Wednesday',
+        'Thursday',
+        'Friday',
+        'Saturday',
+        'Sunday',
+      ],
+    },
+  },
   onClose(selectedDates) {
     const selected = selectedDates[0];
     if (selected <= Date.now()) {
