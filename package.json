@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/vanilla-app-template/",
+    "build": "vite build",
     "preview": "vite preview",
     "deploy": "npm run build && git checkout gh-pages && powershell -Command \"Get-ChildItem -Exclude '.git', '.gitignore' | Remove-Item -Recurse -Force\" && cp -r dist/* . && git add . && git commit -m \"Deploy\" && git push -f origin gh-pages && git checkout main"
   },
